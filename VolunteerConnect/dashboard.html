@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Volunteer Dashboard | VolunteerConnect</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🤝 VolunteerConnect
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+
+    </header>
+
+
+    <!-- DASHBOARD -->
+
+    <section class="dashboard-section">
+
+        <h1>Volunteer Dashboard</h1>
+
+        <p class="dashboard-introduction">
+            View your volunteer profile, joined tasks
+            and participation information.
+        </p>
+
+
+        <!-- PROFILE -->
+
+        <div class="dashboard-container">
+
+            <div class="dashboard-card profile-card">
+
+                <div class="dashboard-icon">
+                    👤
+                </div>
+
+                <h2>My Profile</h2>
+
+                <div id="profileInfo">
+
+                </div>
+
+            </div>
+
+
+            <!-- TASK SUMMARY -->
+
+            <div class="dashboard-card">
+
+    <div class="dashboard-icon">
+        📋
+    </div>
+
+    <h2>My Tasks</h2>
+
+    <div class="stat-number" id="taskCount">
+        0
+    </div>
+
+    <p>
+        Tasks Joined / Assigned
+    </p>
+
+</div>
+
+
+            <!-- PARTICIPATION -->
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-icon">
+                    📊
+                </div>
+
+                <h2>Participation</h2>
+
+                <div class="stat-number" id="volunteerCompletedCount">
+    0
+</div>
+<div class="dashboard-card">
+    <h3>Volunteer Hours</h3>
+    <p id="volunteerHours">0</p>
+    <span>Total Hours Completed</span>
+</div>
+                <p>
+                    Completed Activities
+                </p>
+
+            </div>
+
+        </div>
+        <!-- MY ASSIGNED TASKS -->
+
+<div class="assigned-tasks-section">
+
+    <h2>My Assigned Tasks</h2>
+
+    <p>
+        Tasks assigned to you by the NGO will appear here.
+    </p>
+
+    <div id="assignedTasksList">
+
+    </div>
+
+</div>
+
+
+        <!-- QUICK ACTIONS -->
+
+        <div class="quick-actions">
+
+            <h2>Quick Actions</h2>
+
+            <div class="dashboard-buttons">
+
+                <a href="tasks.html">
+                    Explore Tasks
+                </a>
+
+                <a href="schedule.html">
+                    View Schedule
+                </a>
+
+                <a href="register.html">
+                    Update Profile
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

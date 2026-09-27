@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | VolunteerConnect</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🤝 VolunteerConnect
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ADMIN DASHBOARD -->
+
+    <section class="admin-section">
+
+        <h1>NGO Admin Dashboard</h1>
+
+        <p class="admin-introduction">
+            Manage volunteers, monitor task participation,
+            and maintain volunteer records.
+        </p>
+
+
+        <!-- ADMIN STATISTICS -->
+
+        <div class="admin-stats">
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    👥
+                </div>
+
+                <h2 id="volunteerCount">
+                    0
+                </h2>
+
+                <p>
+                    Registered Volunteers
+                </p>
+
+            </div>
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    📋
+                </div>
+
+                <h2 id="joinedTaskCount">
+                    0
+                </h2>
+
+                <p>
+                    Tasks Joined
+                </p>
+
+            </div>
+
+
+            <div class="admin-stat-card">
+    <h3>Completed Activities</h3>
+    <p id="completedActivityCount">0</p>
+</div>
+
+
+</div>
+<!-- =====================================
+     TASK MANAGEMENT
+===================================== -->
+
+<div class="task-management-section">
+
+    <h2>Task Management</h2>
+
+    <p>
+        Create, edit and manage volunteering opportunities.
+    </p>
+
+    <div class="task-form">
+
+        <input
+            type="hidden"
+            id="editingTaskIndex"
+            value="-1"
+        >
+
+        <label for="adminTaskName">
+            Task Name
+        </label>
+
+        <input
+            type="text"
+            id="adminTaskName"
+            placeholder="Enter task name"
+        >
+
+
+        <label for="adminTaskDate">
+            Date
+        </label>
+
+        <input
+            type="date"
+            id="adminTaskDate"
+        >
+
+
+        <label for="adminTaskTime">
+            Time
+        </label>
+
+        <input
+            type="text"
+            id="adminTaskTime"
+            placeholder="Example: 10 AM - 1 PM"
+        >
+
+
+        <label for="adminTaskLocation">
+            Location
+        </label>
+
+        <input
+            type="text"
+            id="adminTaskLocation"
+            placeholder="Enter task location"
+        >
+
+
+        <label for="adminTaskCapacity">
+            Required Volunteers
+        </label>
+
+        <input
+            type="number"
+            id="adminTaskCapacity"
+            placeholder="Number of volunteers"
+            min="1"
+        >
+
+
+        <label for="adminTaskDescription">
+            Task Description
+        </label>
+
+        <textarea
+            id="adminTaskDescription"
+            placeholder="Enter task description"
+            rows="4"
+        ></textarea>
+
+
+        <button
+            type="button"
+            id="saveAdminTaskBtn">
+            Create Task
+        </button>
+
+    </div>
+
+
+    <div id="adminTaskList">
+
+    </div>
+
+</div>
+<div class="participation-section">
+
+    <h2>Participation Tracking</h2>
+
+    <p>
+        Mark volunteer participation for completed activities.
+    </p>
+
+    <div id="participationList">
+
+    </div>
+
+</div>
+<div class="allocation-section">
+
+    <h2>Task Allocation</h2>
+
+    <p>
+        Assign available volunteer tasks to registered volunteers.
+    </p>
+
+    <div class="allocation-form">
+
+        <label for="volunteerSelect">
+            Select Volunteer
+        </label>
+
+        <select id="volunteerSelect">
+
+            <option value="">
+                Select a volunteer
+            </option>
+
+        </select>
+
+
+        <label for="taskSelect">
+            Select Task
+        </label>
+
+        <select id="taskSelect">
+
+            <option value="">
+                Select a task
+            </option>
+
+            <option value="Teaching Support">
+                Teaching Support
+            </option>
+
+            <option value="Tree Plantation Drive">
+                Tree Plantation Drive
+            </option>
+
+            <option value="Food Distribution">
+                Food Distribution
+            </option>
+
+            <option value="Animal Care">
+                Animal Care
+            </option>
+
+        </select>
+
+
+        <button id="allocateTaskBtn">
+            Allocate Task
+        </button>
+
+    </div>
+
+
+    <div id="allocationList">
+
+    </div>
+
+</div>
+
+</section>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

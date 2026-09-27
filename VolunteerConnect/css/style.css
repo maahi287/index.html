@@ -1,0 +1,1968 @@
+/* =====================================
+   GENERAL SETTINGS
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #263238;
+}
+
+
+/* =====================================
+   NAVIGATION BAR
+===================================== */
+
+.navbar {
+    background-color: #1f4e5f;
+    color: white;
+
+    padding: 18px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 25px;
+
+    font-size: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.hero {
+    background-color: #dceff2;
+
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 45px;
+
+    margin-bottom: 20px;
+
+    color: #1f4e5f;
+}
+
+.hero p {
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+    color: #455a64;
+}
+
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.hero-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background-color: #1f4e5f;
+
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #163b48;
+}
+
+.secondary-btn {
+    background-color: white;
+
+    color: #1f4e5f;
+
+    border: 2px solid #1f4e5f;
+}
+
+.secondary-btn:hover {
+    background-color: #1f4e5f;
+
+    color: white;
+}
+
+
+/* =====================================
+   ABOUT / HOW IT WORKS
+===================================== */
+
+.about {
+    padding: 70px 40px;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.about h2 {
+    font-size: 32px;
+
+    color: #1f4e5f;
+
+    margin-bottom: 10px;
+}
+
+.section-description {
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+
+    color: #607d8b;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   FEATURE CARDS
+===================================== */
+
+.feature-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.feature-card {
+    background-color: #f5f7fa;
+
+    padding: 30px 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #1f4e5f;
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #607d8b;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+}
+
+
+/* =====================================
+   VOLUNTEER SECTION
+===================================== */
+
+.volunteer-section {
+    background-color: #e8f3f5;
+
+    padding: 70px 20px;
+
+    text-align: center;
+}
+
+.volunteer-content {
+    max-width: 700px;
+
+    margin: auto;
+}
+
+.volunteer-section h2 {
+    color: #1f4e5f;
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+.volunteer-section p {
+    color: #546e7a;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    background-color: #1f4e5f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* =====================================
+   MOBILE RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 900px) {
+
+    .feature-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 5px 10px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        padding: 50px 20px;
+    }
+}
+/* =====================================
+   REGISTRATION PAGE
+===================================== */
+
+.registration-section {
+    min-height: 100vh;
+
+    background-color: #f5f7fa;
+
+    padding: 60px 20px;
+}
+
+.registration-container {
+    max-width: 650px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.registration-container h1 {
+    text-align: center;
+
+    color: #1f4e5f;
+
+    margin-bottom: 10px;
+}
+
+.registration-container > p {
+    text-align: center;
+
+    color: #607d8b;
+
+    margin-bottom: 30px;
+}
+
+
+/* FORM LABELS */
+
+.registration-container label {
+    display: block;
+
+    margin-top: 18px;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+
+    color: #37474f;
+}
+
+
+/* INPUTS AND SELECT */
+
+.registration-container input,
+.registration-container select {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #cfd8dc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    background-color: white;
+}
+
+
+/* INPUT FOCUS */
+
+.registration-container input:focus,
+.registration-container select:focus {
+
+    outline: none;
+
+    border-color: #1f4e5f;
+
+    box-shadow: 0 0 0 2px rgba(31, 78, 95, 0.1);
+}
+
+
+/* SUBMIT BUTTON */
+
+.submit-btn {
+
+    width: 100%;
+
+    margin-top: 30px;
+
+    padding: 14px;
+
+    background-color: #1f4e5f;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+
+    background-color: #163b48;
+}
+/* =====================================
+   TASKS PAGE
+===================================== */
+
+.tasks-section {
+    min-height: 100vh;
+
+    background-color: #f5f7fa;
+
+    padding: 60px 30px;
+}
+
+.tasks-section > h1 {
+    text-align: center;
+
+    color: #1f4e5f;
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+.tasks-introduction {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+
+    color: #607d8b;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+/* TASK CONTAINER */
+
+.tasks-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+/* TASK CARD */
+
+.task-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* TASK ICON */
+
+.task-icon {
+    font-size: 45px;
+
+    margin-bottom: 10px;
+}
+
+.task-card h2 {
+    color: #1f4e5f;
+
+    margin-bottom: 10px;
+}
+
+.task-card > p {
+    color: #607d8b;
+
+    line-height: 1.6;
+}
+
+
+/* TASK DETAILS */
+
+.task-details {
+    margin-top: 20px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #e0e0e0;
+}
+
+.task-details p {
+    color: #546e7a;
+
+    margin: 10px 0;
+}
+
+
+/* JOIN BUTTON */
+
+.join-task-btn {
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 13px;
+
+    background-color: #1f4e5f;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.join-task-btn:hover {
+    background-color: #163b48;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .tasks-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =====================================
+   SCHEDULE PAGE
+===================================== */
+
+.schedule-section {
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    padding: 60px 30px;
+}
+
+.schedule-section > h1 {
+    text-align: center;
+    color: #1f4e5f;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.schedule-introduction {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+    color: #607d8b;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.schedule-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.schedule-card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    transition: 0.3s;
+}
+
+.schedule-card:hover {
+    transform: translateY(-4px);
+}
+
+.schedule-icon {
+    font-size: 45px;
+}
+
+.schedule-info h2 {
+    color: #1f4e5f;
+    margin: 0 0 8px;
+}
+
+.schedule-info p {
+    color: #607d8b;
+    margin-bottom: 12px;
+}
+
+.schedule-status {
+    display: inline-block;
+    padding: 7px 14px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.empty-schedule {
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 50px 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.empty-icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.empty-schedule h2 {
+    color: #1f4e5f;
+}
+
+.empty-schedule p {
+    color: #607d8b;
+    line-height: 1.6;
+}
+
+.schedule-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #1f4e5f;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.schedule-btn:hover {
+    background-color: #163b48;
+}
+
+@media (max-width: 600px) {
+
+    .schedule-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+ /* =====================================
+   VOLUNTEER DASHBOARD
+===================================== */
+
+.dashboard-section {
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    padding: 60px 30px;
+}
+
+.dashboard-section > h1 {
+    text-align: center;
+    color: #1f4e5f;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.dashboard-introduction {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+    color: #607d8b;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.dashboard-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.dashboard-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.dashboard-card h2 {
+    color: #1f4e5f;
+    margin-bottom: 20px;
+}
+
+.dashboard-card p {
+    color: #607d8b;
+    line-height: 1.6;
+}
+
+.profile-card {
+    text-align: left;
+}
+
+.profile-card .dashboard-icon,
+.profile-card h2 {
+    text-align: center;
+}
+
+.profile-card p {
+    margin: 8px 0;
+}
+
+.stat-number {
+    font-size: 45px;
+    font-weight: bold;
+    color: #1f4e5f;
+    margin: 15px 0;
+}
+
+.quick-actions {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+.quick-actions h2 {
+    color: #1f4e5f;
+    margin-bottom: 20px;
+}
+
+.dashboard-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.dashboard-buttons a {
+    display: inline-block;
+    padding: 12px 22px;
+
+    background-color: #1f4e5f;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 7px;
+
+    font-weight: bold;
+}
+
+.dashboard-buttons a:hover {
+    background-color: #163b48;
+}
+
+
+@media (max-width: 800px) {
+
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =====================================
+   ADMIN DASHBOARD
+===================================== */
+
+.admin-section {
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    padding: 60px 30px;
+}
+
+.admin-section > h1 {
+    text-align: center;
+    color: #1f4e5f;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.admin-introduction {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+    color: #607d8b;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* ADMIN STATISTICS */
+
+.admin-stats {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.admin-stat-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.admin-stat-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.admin-stat-card h2 {
+    font-size: 40px;
+    color: #1f4e5f;
+    margin: 10px 0;
+}
+
+.admin-stat-card p {
+    color: #607d8b;
+}
+
+
+/* VOLUNTEER LIST */
+
+.admin-volunteers {
+    max-width: 1100px;
+    margin: 40px auto 0;
+
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.admin-volunteers > h2 {
+    color: #1f4e5f;
+    margin-bottom: 25px;
+}
+
+
+/* VOLUNTEER CARD */
+
+.admin-volunteer-card {
+    display: flex;
+    gap: 20px;
+
+    padding: 20px;
+    margin-bottom: 15px;
+
+    background-color: #f8fafb;
+
+    border-left: 5px solid #1f4e5f;
+    border-radius: 8px;
+}
+
+.admin-volunteer-number {
+    min-width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #1f4e5f;
+    color: white;
+
+    border-radius: 50%;
+
+    font-weight: bold;
+}
+
+.admin-volunteer-info h3 {
+    color: #1f4e5f;
+    margin: 0 0 10px;
+}
+
+.admin-volunteer-info p {
+    color: #607d8b;
+    margin: 6px 0;
+}
+
+.no-volunteers {
+    text-align: center;
+    padding: 30px;
+    color: #607d8b;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .admin-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-volunteer-card {
+        flex-direction: column;
+    }
+
+}
+/* =====================================
+   PARTICIPATION TRACKING
+===================================== */
+
+.participation-section {
+    max-width: 1100px;
+    margin: 40px auto 0;
+
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.participation-section h2 {
+    color: #1f4e5f;
+    margin-bottom: 8px;
+}
+
+.participation-section > p {
+    color: #607d8b;
+    margin-bottom: 25px;
+}
+
+.participation-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+    margin-bottom: 15px;
+
+    background-color: #f8fafb;
+
+    border-radius: 8px;
+    border-left: 5px solid #1f4e5f;
+}
+
+.participation-info h3 {
+    color: #1f4e5f;
+    margin: 0 0 8px;
+}
+
+.participation-info p {
+    color: #607d8b;
+    margin: 6px 0;
+}
+
+.participation-status {
+    font-weight: bold;
+}
+
+.participation-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.present-btn,
+.absent-btn {
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 6px;
+
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.present-btn {
+    background-color: #2e7d32;
+}
+
+.present-btn:hover {
+    background-color: #1b5e20;
+}
+
+.absent-btn {
+    background-color: #c62828;
+}
+
+.absent-btn:hover {
+    background-color: #8e0000;
+}
+
+.no-participation {
+    text-align: center;
+    padding: 25px;
+    color: #607d8b;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .participation-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .participation-buttons {
+        width: 100%;
+    }
+
+    .present-btn,
+    .absent-btn {
+        flex: 1;
+    }
+
+}
+/* =====================================
+   TASK ALLOCATION
+===================================== */
+
+.allocation-section {
+    max-width: 1100px;
+    margin: 40px auto 0;
+
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.allocation-section h2 {
+    color: #1f4e5f;
+    margin-bottom: 8px;
+}
+
+.allocation-section > p {
+    color: #607d8b;
+    margin-bottom: 25px;
+}
+
+.allocation-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 15px;
+    align-items: end;
+}
+
+.allocation-form label {
+    color: #37474f;
+    font-weight: bold;
+}
+
+.allocation-form select {
+    padding: 12px;
+
+    border: 1px solid #cfd8dc;
+    border-radius: 7px;
+
+    font-size: 15px;
+}
+
+#allocateTaskBtn {
+    padding: 12px 20px;
+
+    background-color: #1f4e5f;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#allocateTaskBtn:hover {
+    background-color: #163b48;
+}
+
+.allocation-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 20px;
+    padding: 20px;
+
+    background-color: #f8fafb;
+
+    border-left: 5px solid #1f4e5f;
+    border-radius: 8px;
+}
+
+.allocation-info h3 {
+    color: #1f4e5f;
+    margin: 0 0 8px;
+}
+
+.allocation-info p {
+    color: #607d8b;
+    margin: 6px 0;
+}
+
+.allocation-status {
+    display: inline-block;
+
+    margin-top: 5px;
+    padding: 6px 12px;
+
+    background-color: #e3f2fd;
+    color: #1565c0;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.remove-allocation-btn {
+    padding: 9px 15px;
+
+    background-color: #c62828;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.remove-allocation-btn:hover {
+    background-color: #8e0000;
+}
+
+.no-allocations {
+    text-align: center;
+    padding: 25px;
+
+    color: #607d8b;
+}
+
+
+@media (max-width: 800px) {
+
+    .allocation-form {
+        grid-template-columns: 1fr;
+    }
+
+    .allocation-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+}
+/* =====================================
+   ASSIGNED TASKS
+===================================== */
+
+.assigned-tasks-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 35px 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.assigned-tasks-section h2 {
+    color: #1f4e5f;
+    margin-bottom: 10px;
+}
+
+.assigned-tasks-section > p {
+    color: #607d8b;
+    margin-bottom: 25px;
+}
+
+.assigned-task-card {
+    background-color: #f8fafb;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #1f4e5f;
+}
+
+.assigned-task-card h3 {
+    color: #1f4e5f;
+    margin-bottom: 8px;
+}
+
+.assigned-task-card p {
+    color: #607d8b;
+    margin: 5px 0;
+}
+
+.assigned-status {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background-color: #e7f0f5;
+    color: #1f4e5f;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* =====================================
+   RESPONSIVE DASHBOARD
+===================================== */
+
+@media (max-width: 800px) {
+
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-actions {
+        flex-direction: column;
+    }
+
+    .quick-action-btn {
+        width: 100%;
+    }
+
+}
+/* =====================================
+   DELETE SCHEDULE BUTTON
+===================================== */
+
+.delete-schedule-btn {
+    margin-top: 8px;
+    padding: 9px 16px;
+
+    background-color: #d95c5c;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.delete-schedule-btn:hover {
+    background-color: #b83f3f;
+}
+/* =====================================
+   DELETE VOLUNTEER BUTTON
+===================================== */
+
+.delete-volunteer-btn {
+    margin-top: 12px;
+    padding: 9px 16px;
+    background-color: #d95c5c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.delete-volunteer-btn:hover {
+    background-color: #b83f3f;
+}
+ /* =====================================
+    DIGITAL VOLUNTEER MANAGEMENT
+ ===================================== */
+
+.system-section {
+    padding: 70px 30px;
+    background-color: #f5f7fa;
+}
+
+.system-section > h2 {
+    text-align: center;
+    color: #1f4e5f;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.system-section .section-description {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #607d8b;
+    line-height: 1.6;
+}
+
+.system-container {
+    max-width: 1100px;
+    margin: 45px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.system-card {
+    background-color: white;
+    padding: 30px 20px;
+
+    border-radius: 12px;
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.system-card:hover {
+    transform: translateY(-5px);
+}
+
+.system-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.system-card h3 {
+    color: #1f4e5f;
+    margin-bottom: 10px;
+}
+
+.system-card p {
+    color: #607d8b;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+
+    .system-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .system-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =====================================
+   IMPROVED TASK ALLOCATION
+===================================== */
+
+.allocation-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 35px 30px;
+
+    background-color: white;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.allocation-section h2 {
+    text-align: left;
+    color: #1f4e5f;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.allocation-section > p {
+    color: #607d8b;
+    margin-bottom: 30px;
+}
+
+.allocation-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 20px;
+    align-items: center;
+
+    padding: 25px;
+
+    background-color: #f8fafb;
+    border-radius: 10px;
+}
+
+.allocation-form label {
+    color: #37474f;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.allocation-form select {
+    width: 100%;
+    padding: 13px 14px;
+
+    background-color: white;
+
+    border: 1px solid #cfd8dc;
+    border-radius: 7px;
+
+    font-size: 15px;
+    color: #37474f;
+}
+
+.allocation-form select:focus {
+    outline: none;
+    border-color: #1f4e5f;
+}
+
+#allocateTaskBtn {
+    grid-column: 1 / -1;
+
+    width: 100%;
+    padding: 13px 20px;
+
+    margin-top: 8px;
+
+    background-color: #1f4e5f;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#allocateTaskBtn:hover {
+    background-color: #163b48;
+}
+
+@media (max-width: 700px) {
+
+    .allocation-form {
+        grid-template-columns: 1fr;
+    }
+
+    #allocateTaskBtn {
+        grid-column: auto;
+    }
+
+}
+/* =====================================
+   ADMIN CREATED TASKS
+===================================== */
+
+.admin-created-tasks-heading {
+    max-width: 1100px;
+    margin: 45px auto 25px;
+    text-align: center;
+}
+
+.admin-created-tasks-heading h2 {
+    color: #1f4e5f;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.admin-created-tasks-heading p {
+    color: #607d8b;
+    line-height: 1.6;
+}
+
+.admin-created-task-card {
+    border-top: 4px solid #1f4e5f;
+}
+/* =====================================
+   ADMIN CREATED TASKS - VOLUNTEER PAGE
+===================================== */
+
+.admin-created-tasks-heading {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto 30px;
+    padding: 25px 30px;
+
+    background-color: #f5f7fa;
+
+    border-radius: 12px;
+    border-left: 5px solid #1f4e5f;
+
+    text-align: left;
+
+    box-sizing: border-box;
+}
+
+.admin-created-tasks-heading h2 {
+    margin: 0 0 8px;
+
+    color: #1f4e5f;
+
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.admin-created-tasks-heading p {
+    margin: 0;
+
+    color: #607d8b;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   ADMIN CREATED TASK CARD
+===================================== */
+
+.admin-created-task-card {
+    position: relative;
+
+    border-top: 5px solid #1f4e5f;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.admin-created-task-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =====================================
+   ADMIN TASK BADGE
+===================================== */
+
+.admin-created-task-card::before {
+    content: "NGO CREATED";
+
+    display: inline-block;
+
+    margin-bottom: 12px;
+    padding: 5px 10px;
+
+    background-color: #e7f0f5;
+    color: #1f4e5f;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+
+/* =====================================
+   ADMIN TASK BUTTON
+===================================== */
+
+.admin-created-task-card
+.admin-join-task-btn {
+
+    width: 100%;
+
+    margin-top: 15px;
+    padding: 12px 18px;
+
+    background-color: #1f4e5f;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+.admin-created-task-card
+.admin-join-task-btn:hover {
+
+    background-color: #163b48;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================
+   ADMIN TASK RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 700px) {
+
+    .admin-created-tasks-heading {
+
+        width: 92%;
+
+        margin-top: 40px;
+
+        padding: 20px;
+    }
+
+    .admin-created-tasks-heading h2 {
+
+        font-size: 23px;
+    }
+
+    .admin-created-tasks-heading p {
+
+        font-size: 14px;
+    }
+
+}
+/* =====================================
+   TASK MANAGEMENT - ADMIN DASHBOARD
+===================================== */
+
+.task-management-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 35px 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.task-management-section h2 {
+    margin: 0 0 8px;
+    color: #1f4e5f;
+    font-size: 28px;
+}
+
+.task-management-section > p {
+    margin: 0 0 25px;
+    color: #607d8b;
+    line-height: 1.6;
+}
+
+/* TASK FORM */
+
+.task-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 20px;
+    padding: 25px;
+    background-color: #f8fafb;
+    border-radius: 10px;
+    border: 1px solid #e1e8ec;
+}
+
+.task-form label {
+    color: #37474f;
+    font-weight: bold;
+    margin-bottom: -8px;
+}
+
+.task-form input,
+.task-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    background-color: white;
+    border: 1px solid #cfd8dc;
+    border-radius: 7px;
+    font-size: 15px;
+    color: #37474f;
+    font-family: inherit;
+}
+
+.task-form input:focus,
+.task-form textarea:focus {
+    outline: none;
+    border-color: #1f4e5f;
+    box-shadow: 0 0 0 2px rgba(31, 78, 95, 0.08);
+}
+
+.task-form textarea {
+    resize: vertical;
+}
+
+/* DESCRIPTION TAKES FULL WIDTH */
+
+#adminTaskDescription {
+    grid-column: 1 / -1;
+}
+
+/* CREATE / UPDATE BUTTON */
+
+#saveAdminTaskBtn {
+    grid-column: 1 / -1;
+    width: 100%;
+    padding: 13px 20px;
+    margin-top: 5px;
+
+    background-color: #1f4e5f;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#saveAdminTaskBtn:hover {
+    background-color: #163b48;
+    transform: translateY(-1px);
+}
+
+/* ADMIN TASK LIST */
+
+#adminTaskList {
+    margin-top: 25px;
+}
+
+.no-admin-tasks {
+    padding: 25px;
+    text-align: center;
+
+    background-color: #f8fafb;
+    border: 1px dashed #cfd8dc;
+    border-radius: 10px;
+
+    color: #607d8b;
+}
+
+/* CREATED TASK CARD */
+
+.admin-task-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 25px;
+
+    margin-top: 18px;
+    padding: 22px;
+
+    background-color: #f8fafb;
+
+    border: 1px solid #e1e8ec;
+    border-left: 5px solid #1f4e5f;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.admin-task-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.admin-task-info {
+    flex: 1;
+}
+
+.admin-task-info h3 {
+    margin: 0 0 12px;
+
+    color: #1f4e5f;
+    font-size: 20px;
+}
+
+.admin-task-info p {
+    margin: 7px 0;
+
+    color: #607d8b;
+    line-height: 1.5;
+}
+
+.admin-task-info strong {
+    color: #37474f;
+}
+
+/* EDIT + DELETE BUTTONS */
+
+.admin-task-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    min-width: 100px;
+}
+
+.edit-task-btn,
+.delete-task-btn {
+    padding: 9px 15px;
+
+    border: none;
+    border-radius: 6px;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.edit-task-btn {
+    background-color: #e7f0f5;
+    color: #1f4e5f;
+}
+
+.edit-task-btn:hover {
+    background-color: #d5e4eb;
+}
+
+.delete-task-btn {
+    background-color: #d95c5c;
+    color: white;
+}
+
+.delete-task-btn:hover {
+    background-color: #b83f3f;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .task-management-section {
+        width: 92%;
+        padding: 25px 20px;
+        box-sizing: border-box;
+    }
+
+    .task-form {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    #adminTaskDescription,
+    #saveAdminTaskBtn {
+        grid-column: auto;
+    }
+
+    .admin-task-card {
+        flex-direction: column;
+    }
+
+    .admin-task-actions {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .edit-task-btn,
+    .delete-task-btn {
+        flex: 1;
+    }
+}
